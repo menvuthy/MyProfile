@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+    <link rel="stylesheet" href="map/style-map.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+
+    <!-- FullScreen plugins -->
+    <link rel="stylesheet" href="./map/plugins/fullscreen/Control.FullScreen.css" />
+    <script src="./map/plugins/fullscreen/Control.FullScreen.js"></script>
+
+    <!-- Sidebar -->
+    <link rel="stylesheet" href="./map/plugins/sidebar/leaflet-sidebar.css" />
+    <script src="./map/plugins/sidebar/leaflet-sidebar.js"></script>
+
+
+    <title>Interactive Map</title>
+    
+</head>
+<body">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo-for-black-background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="map.html">MAPS</a></li>
+                    <li><a href="contact.html" class="hero-btn-cntc">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box" >
+           
+            <h1>MAPS & DATASET</h1>
+            <p>GEOSPATIALYST<br>Cambodian GIS & Remote Sensing Consultant</p>
+            <!-- <a href="" class="hero-btn">WHAT WE DO</a> -->
+        
+        </div>
+    
+    </section>
+
+
+<section class="Maps">
+    <h1>Industries we support</h1>
+    <p>Geospatialyst supports a variety of industries with the goal of aligning Geographic Information Systems (GIS) <br>and Remote Sensing best-practices with our clients' needs. We're proud to provide highly adaptable <br>and customized solutions for our clients.</p>
+
+    <div class="row">
+        <div class="Maps-col-left">
+            <h3>Commune Boundary</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="Maps-col-right" id="map"></div>
+    </div>
+
+    <div class="row">
+        <div class="Maps-col-left">
+            <h3>Commune Boundary</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="Maps-col-right" id="map2"></div>
+    </div>
+
+    
+</section>
+
+    <!-- dataset path -->
+    <script src="./map/data/river.js"></script>
+    <script src="./map/data/commune-cambo.js"></script>
+
+    
+
+    <!-- map must be at bottom -->
+    <script src="./map/map.js"></script>
+    <script src="./map/map2.js"></script>
+
+
+<!-- Footer -->
+<section class="footer">
+    <!-- <h3>Contact Us</h3> -->
+    <p>GEOSPATIALYST GIS CONSULTING, INC., 3047 UNIVERSITY AVENUE, SAN DIEGO, CA, 92104858-314-9447INFO@SDGIS.COM</p>
+
+    <div class="icons">
+        <a href="https://www.facebook.com/GeospatialystCambodia">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+
+    <p class="footer">All Rights Reserved &copy; Geospatialyst</p>
+
+
+</section>
+<!-- ///////////////////////////////////////////////////////////////////////// -->
+<!-- JavaScript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function  showMenu(){
+        navLinks.style.right = '0';
+    } 
+    function  hideMenu(){
+        navLinks.style.right = '-200px';
+    } 
+</script>
+    
+</body>
+</html>
+
