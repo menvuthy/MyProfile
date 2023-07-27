@@ -71,8 +71,8 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Geospatial Software Development", "Satellite Image Analysis", "Remote Sensing", 
-    "Water Resources", "Climate Change", "Environment", "Agriculture"],
+    strings: ["Geospatial Software Development", "Geographic Information System (GIS)", "Data Science", 
+    "Remote Sensing", "Water Resources", "Climate Change"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
