@@ -688,10 +688,10 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #ffd900;
+  background: grey;
 }
 .work .box-container .box .content .tag h3 {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 .work .box-container .box:hover .content {
   top: 25%;
@@ -703,7 +703,7 @@ header .navbar ul li a:hover {
   justify-content: center;
 }
 .work .desc p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .work .desc .btns {
   display: flex;
